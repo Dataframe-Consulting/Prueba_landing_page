@@ -1,3 +1,48 @@
-<h1>Hello World</h1>
-
-  
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xquisito</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="banner-soon">
+      <div class="marquee">
+        <div class="marquee-inner">
+          <span class="coming-white">Coming soon</span>
+          <span class="coming-logo">Coming soon</span>
+          <span class="coming-white">Coming soon</span>
+          <span class="coming-logo">Coming soon</span>
+          <span class="coming-white">Coming soon</span>
+        </div>
+      </div>
+    </div>
+    <section class="hero">
+      <canvas id="embers"></canvas>
+      <div class="content">
+        <img src="iso-2 (1).png" alt="Logo Xquisito" class="logo" />
+        <div class="text-below">
+          <h1 class="fade-in">Revoluciona la experiencia en tu restaurante</h1>
+          <p class="fade-in delay-1">Pedidos sin fricción, pagos instantáneos y datos inteligentes.</p>
+          <a href="#" id="open-modal" class="btn fade-in delay-2">Agenda un demo</a>
+        </div>
+      </div>
+    </section>
+    <div id="modal-demo" class="modal-demo">
+      <div class="modal-content">
+        <img src="iso-2 (1).png" alt="Logo Xquisito" class="logo-modal" />
+        <span class="close-modal">&times;</span>
+        <h2>Solicita una reunión</h2>
+        <form id="demo-form">
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required />
+          <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required />
+          <textarea id="mensaje" name="mensaje" placeholder="Mensaje (opcional)"></textarea>
+          <button type="submit" class="btn">Enviar solicitud</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
